@@ -1,10 +1,23 @@
 import './App.css';
 import React from 'react';
-import { render } from '@testing-library/react';
+
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
+import HornedBeast from './HornedBeast';
 
 class App extends React.Component {
   render() {
-    return (<h1>Welcome Mr. Don</h1>);
+    return (
+      <div>
+          <Header />
+          <Main>
+            <HornedBeast />
+            <HornedBeast />
+          </Main>
+          <Footer />
+      </div>
+    );
   }
 }
 
