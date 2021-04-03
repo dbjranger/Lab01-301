@@ -4,7 +4,7 @@ import HornedBeast from './HornedBeast';
 const Main = () => {
   return(
   <div>
-    <HornedBeast></HornedBeast>
+    <HornedBeast />
   </div>);
 }
 
