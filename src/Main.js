@@ -8,12 +8,12 @@ import hornedBeastConstants from './constants/hornedBeastConstants.json';
 
 class Main extends React.Component {
   render() {
-    let beasts = hornedBeastConstants.map( (item, index) => (
+    let beasts = hornedBeastConstants.map( (animal, index) => (
         <HornedBeast 
-          name={item.title} 
-          title={item.title} 
-          imgUrl={item.image_url} 
-          description={item.description} 
+          keyword={animal.keyword} 
+          title={animal.title} 
+          image_url={animal.image_url} 
+          description={animal.description} 
           key={index}
         />)
     )
