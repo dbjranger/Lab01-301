@@ -1,22 +1,22 @@
 import React from 'react';
 
-import HornedBeast from './HornedBeast';
-import hornedBeastConstants from './constants/hornedBeastConstants';
+import './Main.css';
 
-// import './Main.css';
+import HornedBeast from './HornedBeast';
+import hornedBeastConstants from './constants/hornedBeastConstants.json';
+
 
 class Main extends React.Component {
   render() {
-    let beasts = [];
-    hornedBeastConstants.forEach( item => {
-      beasts.push(
+    let beasts = hornedBeastConstants.map( (item, index) => (
         <HornedBeast 
           name={item.title} 
           title={item.title} 
           imgUrl={item.image_url} 
           description={item.description} 
+          key={index}
         />)
-    })
+    )
     return (
       <main>
         {beasts}
