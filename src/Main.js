@@ -2,6 +2,8 @@ import React from 'react';
 
 import './Main.css';
 
+import CardColumns from 'react-bootstrap/CardColumns';
+
 import HornedBeast from './HornedBeast';
 import hornedBeastConstants from './constants/hornedBeastConstants.json';
 
@@ -19,7 +21,9 @@ class Main extends React.Component {
     )
     return (
       <main>
-        {beasts}
+        <CardColumns>
+          {beasts}
+        </CardColumns>
       </main>)
   }
 }
